@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
           if item == supplies.last
             item.capitalize
           else 
-            item.capitalize << ", "
+            item.capitalize << ', ' 
           end }"
       end
     end
