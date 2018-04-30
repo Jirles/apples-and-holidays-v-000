@@ -63,13 +63,12 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, data|
     puts "#{season.capitalize}:"
     data.each do |holiday, supplies|
-      print "#{holiday.capitalize}: "
-      supplies.each do |item| 
-        if item == supplies.last
-          print "#{item.capitalize}\n"
-        else 
-          print "#{item.capitalize}, "
-        end
+      puts "#{holiday.capitalize}: #{supplies.each do |item| 
+          if item == supplies.last
+            item.capitalize
+          else 
+            item.capitalize << ", "
+          end }"
       end
     end
   end
