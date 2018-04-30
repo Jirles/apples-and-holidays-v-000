@@ -70,6 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
         else 
           print "#{item.capitalize}, "
         end
+      puts " "
       end
     end
   end
