@@ -66,11 +66,10 @@ def all_supplies_in_holidays(holiday_hash)
       print "#{holiday.capitalize}: "
       supplies.each do |item| 
         if item == supplies.last
-          print "#{item.capitalize}"
+          puts "#{item.capitalize}"
         else 
           print "#{item.capitalize}, "
         end
-      puts " "
       end
     end
   end
