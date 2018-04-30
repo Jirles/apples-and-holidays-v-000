@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
         if item == supplies.last
           supplies_str << formatted_item
         else 
-          supplies_str << "#{item.capitalize}, " 
+          supplies_str << "#{formatted_item}, " 
         end 
       end
     puts "  #{holiday}: #{supplies_str}"
