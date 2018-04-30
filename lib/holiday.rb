@@ -64,9 +64,9 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.capitalize}:"
     data.each do |holiday, supplies|
       supplies_str = ""
-      holiday = holiday.to_s.sub("_", " ").sub(/^\D|\b\w/){|s| s.capitalize}
+      holiday = holiday.to_s.sub("_", " ").sub(/(^\D|\b\w)/){|s| s.capitalize}
       supplies.each do |item|
-        formatted_item = item.sub("_", " ").sub(/^\D|\b\w/){|s| s.upcase}
+        formatted_item = item.sub("_", " ").sub(/(^\D|\b\w)/){|s| s.upcase}
         if item == supplies.last
           supplies_str << formatted_item
         else 
