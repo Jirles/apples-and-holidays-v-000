@@ -84,6 +84,7 @@ def all_holidays_with_bbq(holiday_hash)
       supplies.include?("BBQ") ? bbq_holidays << holiday : next
     end
   end
+  bbq_holidays
 end
 
 
